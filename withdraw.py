@@ -1,20 +1,21 @@
 import ccxt
 
-#
-binance_api_key = 'BINANCE_API_KEY'
-binance_secret_key = 'BINANCE_SECRET_KEY'
-kucoin_api_key = 'KUCOIN_API_KEY'
-kucoin_secret_key = 'KUCOIN_SECRET_KEY'
-kraken_api_key = 'KRAKEN_API_KEY'
-kraken_secret_key = 'KRAKEN_SECRET_KEY'
-bitget_api_key = 'BITGET_API_KEY'
-bitget_secret_key = 'YOUR_BITGET_SECRET_KEY'
+# Prompt user for exchange details
+binance_api_key = input("Enter your Binance API key: ")
+binance_secret_key = input("Enter your Binance secret key: ")
+binance_usdt_address = input("Enter your Binance USDT TRC20 withdrawal address: ")
 
-#
-binance_usdt_address = 'BINANCE_USDT_TRC20_ADDRESS'
-kucoin_usdt_address = 'KUCOIN_USDT_TRC20_ADDRESS'
-kraken_usdt_address = 'KRAKEN_USDT_TRC20_ADDRESS'
-bitget_usdt_address = 'BITGET_USDT_TRC20_ADDRESS'
+kucoin_api_key = input("Enter your KuCoin API key: ")
+kucoin_secret_key = input("Enter your KuCoin secret key: ")
+kucoin_usdt_address = input("Enter your KuCoin USDT TRC20 withdrawal address: ")
+
+kraken_api_key = input("Enter your Kraken API key: ")
+kraken_secret_key = input("Enter your Kraken secret key: ")
+kraken_usdt_address = input("Enter your Kraken USDT TRC20 withdrawal address: ")
+
+bitget_api_key = input("Enter your Bitget API key: ")
+bitget_secret_key = input("Enter your Bitget secret key: ")
+bitget_usdt_address = input("Enter your Bitget USDT TRC20 withdrawal address: ")
 
 # Initialize exchanges
 binance = ccxt.binance({
